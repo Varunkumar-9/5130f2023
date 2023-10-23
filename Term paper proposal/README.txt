@@ -1,0 +1,5 @@
+Online Car Spare Parts and Equipment Price Comparison System 
+
+
+Abstract: 
+In this era of digital transformation and the thriving e-commerce landscape, the automotive industry has undoubtedly witnessed remarkable progress, from the integration of smart technologies into vehicles to the convenience of online car sales. Yet, amidst this rapid evolution, a striking gap persists a void that affects the daily lives of both individual vehicle owners and the operations of automotive businesses. This conspicuous absence pertains to the unavailability of a dedicated platform where consumers and professionals can easily and comprehensively compare the prices of car spare parts and equipment. This deficiency, while seemingly minor, poses a substantial challenge, as it leaves automotive enthusiasts and industry experts without a robust tool to make well-informed, cost-effective decisions in a market filled with diverse options and price disparities.
