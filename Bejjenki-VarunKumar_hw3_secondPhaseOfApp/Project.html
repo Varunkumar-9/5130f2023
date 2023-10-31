@@ -1,0 +1,323 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Website project</title>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+		 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	
+	<body>
+		<table width="100%" height="60" border="0" cellspacing="5" cellpadding="5"
+		bgcolor="#000000">
+			<tr>
+				<td align="left">
+					<table width="547" align="center" border="0" cellspacing="1" cellpadding="1">
+						<tr>
+						<td width="96"><font face="verdana, Geneva, sans-serif" color="white">
+						<h3>Home</h3></font></td>
+						<td width="113"><font face="verdana, Geneva, sans-serif" color="white">
+						<h3>About</h3></font></td>
+						<td width="120"><font face="verdana, Geneva, sans-serif" color="white">
+						<h3>Services</h3></font></td>
+						<td width="114"><font face="verdana, Geneva, sans-serif" color="white">
+						<h3>Clients</h3></font></td>
+						<td width="80"><font face="verdana, Geneva, sans-serif" color="white">
+						<h3>Contact</h3></font></td>
+						</tr>
+					</table>
+			</tr>
+		</table>
+		<table width="100%" height="160" border="0" cellspacing="5" cellpadding="5"
+		bgcolor="#F0F0F0">
+			<tr>
+				<td align="center">
+					<table width="750" align="center" border="0" cellspacing="1" cellpadding="1">
+						<tr>
+							<td width="338" align="left">
+								<font face="verdana, Geneva, sans-serif" color="black" size="5"><strong>
+								My Business</strong><br/>
+								Website</font>
+							</td>
+							<td width="420" align="right">
+								<font face="verdana, Geneva, sans-serif" color="black" size="5"><strong>
+								Call Us Today!</strong><br/>
+								<a href="#">1-800-000-0000</a></font>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+		<table align="center" width="50%" height="300" border="0" cellspacing="5" cellpadding="5"
+		background="website2.jpg">
+		
+		</table>
+		<table width="100%" height="90" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+		<tr>
+			<td align=center>
+			<br>
+			<font face="verdana, Geneva, sans-serif" color="black" size="5">This is my company website<br/>
+								<strong>Dream.&nbsp; Plan.&nbsp; Create.</strong></font></td>
+		</tr>
+		</table>
+		<table width="100%" height="50" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+			<tr>
+				<td></td>
+				<td width="190" align="center" bgcolor="#FFA500"><a href="#">Contact Us Today!<a></td>
+				<td></td>
+			</tr>
+		</table>
+		<table width="100%" height="50" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+		<tr>
+			<td align=center>
+				<table width="250" align="center" border="0" cellspacing="1" cellpadding="1" >
+					<tr>
+						<td align=center nowrap="nowrap" cols="2"><strong>Register for our Newsletter:</strong></td>
+					</tr>		
+					<tr>
+						<td align=left><input type="text" name="fname" maxlength="50"/> </td>
+						<td align=left><input type="submit" name="SUBMIT" value="SUBMIT"/></td>
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		<table width="900" height="250" align="center" border="0" cellpadding="5" cellspacing="5" bgcolor="white">
+		<tr>
+			<td height="72" align="center" valign="top">
+				<table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="white">
+					<tr>
+						<td width="268"><strong><u>ABOUT US<u></strong></td>
+						<td width="286"><strong><u>OUR VISION<u></strong></td>
+						<td width="290"><strong><u>SERVICES<u></strong></td>
+					</tr>
+				
+					<tr>
+						<td valign="top"><font face="verdana, Geneva, sans-serif" color="black" size="2">The platform emerged above sea level at one point before eventually drowning for reasons still unknown, with thermal subsidence lowering it further to its present depth.</font></td>
+						<td valign="top"><font face="verdana, Geneva, sans-serif" color="black" size="2">
+						<ol>
+						<li>Clarity and Simplicity</li>
+						<li>Long-term Goals</li>
+						<li>Uniqueness</li>
+						<li>Inspiration</li>
+						<li>Realism</li>
+						</ol></font></td>
+						<td valign="top"><font face="verdana, Geneva, sans-serif" color="black" size="2">
+						<ul>
+						<li>Strategy and Organisation</li>
+						<li>Corporate</li>
+						<li>Globalization</li>
+						<li>Operations management</li>
+						<li>Corporate Finance</li>
+						<li>IT Management</li>
+						</ul>
+						</font></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		
+	<h1>Client Age Group</h1>
+
+  <div style="width: 18%;">
+    <canvas id="pieChart1"></canvas>
+  </div>
+	<h1>Stocks</h1>
+  <div style="width: 18%;">
+    <canvas id="pieChart2"></canvas>
+  </div>
+    <h1>Share Value</h1>
+  <div style="width: 18%;">
+    <canvas id="pieChart3"></canvas>
+  </div>
+
+  <script>
+    // Data for the first pie chart
+    const chartData1 = {
+      labels: ['>25', '25-50', '50<'],
+      data: [30, 20, 50],
+      backgroundColors: ['blue', 'green', 'yellow']
+    };
+
+    // Data for the second pie chart
+    const chartData2 = {
+      labels: ['High Risk', 'Medium Risk', 'Low Risk'],
+      data: [25, 35, 40],
+      backgroundColors: ['pink', 'purple', 'black']
+    };
+
+    // Data for the third pie chart
+    const chartData3 = {
+      labels: ['2021', '2020', '2019'],
+      data: [45, 30, 25],
+      backgroundColors: ['grey', 'blue', 'yellow']
+    };
+
+    function createChart(ctx, data) {
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: data.labels,
+          datasets: [{
+            data: data.data,
+            backgroundColor: data.backgroundColors,
+          }]
+        }
+      });
+    }
+
+    // Get contexts for the canvases and create the charts
+    const ctx1 = document.getElementById('pieChart1').getContext('2d');
+    createChart(ctx1, chartData1);
+
+    const ctx2 = document.getElementById('pieChart2').getContext('2d');
+    createChart(ctx2, chartData2);
+
+    const ctx3 = document.getElementById('pieChart3').getContext('2d');
+    createChart(ctx3, chartData3);
+  </script>	
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Client Information</h1>
+
+  <form id="userDataForm" method="POST" name='google-sheet'>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+	
+	<label for="age">Locality:</label>
+    <input type="text" id="locality" name="locality" required><br><br>
+	
+	<label for="age">Technology:</label>
+    <input type="text" id="technology" name="technology" required><br><br>
+	
+	<label for="age">Budget:</label>
+    <input type="text" id="budget" name="budget" required><br><br>
+	
+	<label for="age">Urgency:</label>
+    <input type="text" id="urgency" name="urgency" required><br><br>
+	
+	<label for="age">Deadline:</label>
+    <input type="text" id="deadline" name="deadline" required><br><br>
+	
+	
+	<label for="age">Server description:</label>
+    <input type="text" id="server" name="server" required><br><br>
+	
+	<label for="age">Issue:</label>
+    <input type="text" id="issue" name="issue" required><br><br>
+	
+	<label for="age">Problem in-detail:</label>
+    <input type="text" id="problem" name="problem" required><br><br>
+	
+	<label for="age">Referal:</label>
+    <input type="text" id="referal" name="referal" required><br><br>
+	
+	
+<input type="submit" value="Submit">
+  </form>
+  
+  
+  
+  <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyEMIt_QCP2RSue_il-XwgTZY9awKMNSJS_Zq7PhgSmAluOcYBre1hVBgOioGANBcxXPg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+
+<br><br>  
+	<table width="100%" height="250" align="center" border="0" cellpadding="5" cellspacing="5" bgcolor="C4B6B6">
+		<tr>
+			<td>
+			<img src="picture.jpg" height="200" width="200" align="center" style="border-radius: 50%;">
+			</td>
+			<td><p style=" color: black;   font-style: italic;" > <br><br>Hello, I'm Varun Kumar Bejjenki 23 years self-employed student and business man. I was born and brought up in India, 
+					Since my childhood most of my life was not spent at home.  I'm an independent bachelor who stays alone at United StatesOf America trying to seek my interests. I'm a business enthusiastic with 2 years of experience in Marketing, 
+					and I hold a Phd degree. At my Business, we specialize in Marketing and Development. With a strong commitment to Operations management, Corporate Finance. 
+					Our mission is to inspire and reach our long-term goals. We're dedicated to clarify and simplify our customer goals. 
+					Thank you for considering my business as your trusted partner. 
+					I look forward to Collaborate with Visitors. 
+				</p>
+			</td>
+		</tr>
+	</table>
+		
+	<table width="100%" height="90" border="1" cellpadding="5" cellspacing="5" bgcolor="#000000">
+		<tr>
+			<td align="center">
+			<font face="verdana, Geneva, sans-serif" color="white">
+			Home - About - Services - Clients <br/>
+			<br/>
+			@ 2023 MyBusiness Website. </font>
+			</td>
+		</tr>
+	</table>
+				
+	
+  <script>
+    // Data for the first pie chart
+    const chartData1 = {
+      labels: ['>25', '25-50', '50<'],
+      data: [30, 20, 50],
+      backgroundColors: ['blue', 'green', 'yellow']
+    };
+
+    // Data for the second pie chart
+    const chartData2 = {
+      labels: ['High Risk', 'Medium Risk', 'Low Risk'],
+      data: [25, 35, 40],
+      backgroundColors: ['pink', 'purple', 'black']
+    };
+
+    // Data for the third pie chart
+    const chartData3 = {
+      labels: ['2021', '2020', '2019'],
+      data: [45, 30, 25],
+      backgroundColors: ['grey', 'blue', 'yellow']
+    };
+
+    function createChart(ctx, data) {
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: data.labels,
+          datasets: [{
+            data: data.data,
+            backgroundColor: data.backgroundColors,
+          }]
+        }
+      });
+    }
+
+    // Get contexts for the canvases and create the charts
+    const ctx1 = document.getElementById('pieChart1').getContext('2d');
+    createChart(ctx1, chartData1);
+
+    const ctx2 = document.getElementById('pieChart2').getContext('2d');
+    createChart(ctx2, chartData2);
+
+    const ctx3 = document.getElementById('pieChart3').getContext('2d');
+    createChart(ctx3, chartData3);
+  </script>	
+
+
+
+					
+			
+</body>
+
+
+</html>
