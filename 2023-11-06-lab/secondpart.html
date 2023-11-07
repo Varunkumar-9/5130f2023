@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation Form</title>
+    <script>
+        function validateInputs() {
+            const phoneNumber = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const url = document.getElementById('url').value;
+
+            const phonePattern = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const urlPattern = /^(http|https):\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,}\/?([^\s]*)$/;
+
+            const phoneIsValid = phonePattern.test(phoneNumber);
+            const emailIsValid = emailPattern.test(email);
+            const urlIsValid = urlPattern.test(url);
+
+            document.getElementById('phoneResult').innerText = `Phone Number: ${phoneIsValid ? 'Valid' : 'Invalid'}`;
+            document.getElementById('emailResult').innerText = `Email: ${emailIsValid ? 'Valid' : 'Invalid'}`;
+            document.getElementById('urlResult').innerText = `URL: ${urlIsValid ? 'Valid' : 'Invalid'}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Validation Form</h1>
+    <form onsubmit="event.preventDefault(); validateInputs();">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required><br><br>
+
+        <button type="submit">Validate</button>
+    </form>
+
+    <div id="phoneResult"></div>
+    <div id="emailResult"></div>
+    <div id="urlResult"></div>
+</body>
+</html>
